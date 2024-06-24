@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - A la française</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <img src="/images/logo/ohmyfood.png">
+            <a href="index.html"><i class="button-header fa-solid fa-arrow-left"></i></a>
+        </header>
+
+        <main>
+            <div>
+                <img class="photo-bg" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat dans une assiette">
+            </div>
+
+            <section class="menu-list">
+                <div class="menu-title">
+                    <h1>&Agrave; la française</h1>
+                    <div>
+                        <input type="checkbox" id="favoris3" name="favoris" class="favorite-heart">
+                        <label for="favoris3" class="fa"></label>
+                    </div>
+                </div>
+                <article class="menu-content">
+                    <p class="menu-content-title">ENTR&Eacute;ES</p>
+
+                    <!--  V1  -->
+                    <!-- <article class="menu-card">
+                        <label for="choix">
+                            <div class="menu-card-text">
+                                <p class="menu-card-text-title">Tartare de poulpe acidulé</p>
+                                <p class="menu-card-text-subtitle">Aux zestes d'orange</p>
+                            </div>
+                            <input type="checkbox" id="choix" name="choix" value="choix1"/>  
+                            <div class="volet">
+                                <p class="price">25€</p>
+                                <div>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </label>
+                    </article> -->
+
+                    <!--  V2  -->
+                    <article class="menu-card">
+                        <label for="choix">
+                            <div class="menu-card-text">
+                                <p class="menu-card-text-title">Tartare de poulpe acidulé</p>
+                                <div class="menu-card-text-subtitle">
+                                    <p >Aux zestes d'orange</p>
+                                    <p class="price">25€</p>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="choix" name="choix" value="choix1"/>  
+                            <div class="volet">
+                                    <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </label>
+                    </article>
+                    
+                </article>
+                <a href="" class="button-order">Commander</a>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul class="important">
+                    <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+                    <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+                </ul>
+                <ul>
+                    <li>Mentions légales</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <span class="logo">ohmyfood</span>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
