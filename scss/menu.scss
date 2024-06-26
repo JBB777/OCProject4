@@ -6,12 +6,12 @@ h1 {
 /******************/
 /***   HEADER   ***/
 /******************/
-header {
+.header {
     
     flex-direction: row;
     justify-content: center;
 
-    .button-header {
+    &__button {
         position: absolute;
         top: 24.5px;
         left: 10%;
@@ -25,7 +25,7 @@ header {
 }
 
 
-.menu-list {
+.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,29 +35,28 @@ header {
     border-radius: 50px 50px 0 0;
     padding: 10px 20px;
 
-    .menu-title {
+    &__title {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin-bottom: -25px;
-
-        h1 {
+        
+        &__principal {
             font-size: xx-large;
         }
 
-        i {
+        &__icon {
             font-size: 30px;
         }
-
     }
 
-    .menu-content {
+    &-content {
         width: 100%;
         margin-bottom: 10px;
 
-        .menu-content-title {
+        &__title {
             width: fit-content;
             font-size: 20px;
             font-weight:100;
@@ -65,130 +64,50 @@ header {
             width: 50px;
         }
 
-        .menu-card {
+        &__card {
             background-color: white;
             border-radius: 20px;
             margin-bottom: 20px;
 
-            // input {
-            //     display: none;
-
-            // }
-
-            /************/
-            /* Label V1 */
-            /************/
-            // label {
-            //     width: 100%;
-            //     display: flex;
-            //     flex-direction: row;
-            //     justify-content: space-between;
-            //     align-items: center;
-                
-            //     .menu-card-text {
-            //         display: flex;
-            //         flex-direction: column;
-            //         padding: 10px 0 10px 10px;
-            //         gap:5px;
-                    
-            //         .menu-card-text-title {
-            //             font-weight: bold;
-            //             margin: 0;
-            //         }
-
-            //         .menu-card-text-subtitle {
-            //             margin: 0;
-            //         }
-            //     }
-
-            //     .volet {
-            //         display: flex;
-            //         flex-direction: row;
-            //         column-gap: 10px;
-            //         align-items: flex-end;
-
-            //         .price {
-            //             margin-bottom: 10px;
-            //             font-weight: bold;
-            //         }
-                    
-            //         i {
-            //             background-color: var(--filter-bg-color);
-            //             color: white;
-            //             font-size: 20px;
-            //             padding: 22px 10px;
-            //             border-radius: 0 20px 20px 0;
-            //         }
-            //     }
-            // }
-
-            /************/
-            /* Label V2 */
-            /************/
-            label {
+            &__text {
                 display: flex;
-                gap:5px;
+                flex-direction: column;
+                padding: 0 10px;
 
-                .menu-card-text {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    padding-left: 10px;
-
-                    .menu-card-text-title {
-                        font-weight: bold;
-                        margin: 0;
-                        padding-top: 10px;
-                    }
+                &__title {
+                    font-weight: bold;
+                    margin: 0;
+                    padding-top: 10px;
+                }
             
-                    .menu-card-text-subtitle {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        margin-top: -10px;
-
-                        .price {
-                            font-weight: bold;
-                        }
-                    }
-                }
-
-                input {
-                    display: none;
-
-                    &:checked + .volet {
-                        transform: scale(1,1);
-                    }
-                }
-                .volet {
-                    align-content: center;
-                    background-color: var(--filter-bg-color);
-                    border-radius: 0 20px 20px 0;
-                    padding: 0 10px;
-                    transform-origin: right;
-                    transform: scale(0,1);
-                    transition: transform 500ms;
-
-                    i {
-                        font-size: 20px;
-                        color: white;
-                    }
+                &__subtitle {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-top: -10px; 
                 }
             }
         }
     }
-    
+}
 
-    .button-order {
+.price {
+    font-weight: bold;
+}
+
+.volet {
+    align-content: center;
+    background-color: var(--filter-bg-color);
+    border-radius: 0 20px 20px 0;
+    padding: 0 10px;
+    transform-origin: right;
+    transform: scale(0,1);
+    transition: transform 500ms;
+
+    i {
+        font-size: 20px;
         color: white;
-        border: none;
-        border-radius: 25px;
-        background: linear-gradient(var(--main-bg-color), var(--main-color));
-        box-shadow: 0px 4px 10px 0px #00000040;
-        padding: 15px 20px;
-
-        &:hover {
-            opacity: 0.9;
-        }
     }
 }
+
+

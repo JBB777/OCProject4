@@ -13,9 +13,9 @@
 </head>
 <body>
     <div class="main-container">
-        <header>
-            <img src="/images/logo/ohmyfood.png">
-            <a href="index.html"><i class="button-header fa-solid fa-arrow-left"></i></a>
+        <header class="header">
+            <img class="header__logo" src="/images/logo/ohmyfood.png">
+            <a href="index.html"><i class="header__button fa-solid fa-arrow-left"></i></a>
         </header>
 
         <main>
@@ -23,68 +23,44 @@
                 <img class="photo-bg" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat dans une assiette">
             </div>
 
-            <section class="menu-list">
-                <div class="menu-title">
-                    <h1>&Agrave; la française</h1>
-                    <div>
-                        <input type="checkbox" id="favoris3" name="favoris" class="favorite-heart">
-                        <label for="favoris3" class="fa"></label>
-                    </div>
+            <section class="menu">
+                <div class="menu__title">
+                    <h1 class="menu__title__principal">&Agrave; la française</h1>
+                    <i class="fa-regular fa-heart menu__title__icon"></i>
                 </div>
                 <article class="menu-content">
-                    <p class="menu-content-title">ENTR&Eacute;ES</p>
+                    <p class="menu-content__title">ENTR&Eacute;ES</p>
 
-                    <!--  V1  -->
-                    <!-- <article class="menu-card">
-                        <label for="choix">
-                            <div class="menu-card-text">
-                                <p class="menu-card-text-title">Tartare de poulpe acidulé</p>
-                                <p class="menu-card-text-subtitle">Aux zestes d'orange</p>
-                            </div>
-                            <input type="checkbox" id="choix" name="choix" value="choix1"/>  
-                            <div class="volet">
+                    <article class="menu-content__card">
+                        <div class="menu-content__card__text">
+                            <p class="menu-content__card__text__title">Tartare de poulpe acidulé</p>
+                            <div class="menu-content__card__text__subtitle">
+                                <p >Aux zestes d'orange</p>
                                 <p class="price">25€</p>
-                                <div>
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
                             </div>
-                        </label>
-                    </article> -->
-
-                    <!--  V2  -->
-                    <article class="menu-card">
-                        <label for="choix">
-                            <div class="menu-card-text">
-                                <p class="menu-card-text-title">Tartare de poulpe acidulé</p>
-                                <div class="menu-card-text-subtitle">
-                                    <p >Aux zestes d'orange</p>
-                                    <p class="price">25€</p>
-                                </div>
-                            </div>
-                            <input type="checkbox" id="choix" name="choix" value="choix1"/>  
-                            <div class="volet">
-                                    <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                        </label>
+                        </div>  
+                        <!-- <div class="volet">
+                                <i class="fa-solid fa-circle-check"></i>
+                        </div> -->
                     </article>
                     
                 </article>
-                <a href="" class="button-order">Commander</a>
+                <a href="" class="gradient-button">Commander</a>
             </section>
         </main>
 
-        <footer>
-            <nav>
-                <ul class="important">
-                    <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-                    <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="important footer__list">
+                    <li class="footer__list__element"><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</li>
+                    <li class="footer__list__element"><i class="fa-solid fa-handshake-angle footer__icon"></i>Devenir partenaire</li>
                 </ul>
-                <ul>
-                    <li>Mentions légales</li>
-                    <li>Contact</li>
+                <ul class="footer__list">
+                    <li class="footer__list__element">Mentions légales</li>
+                    <li class="footer__list__element">Contact</li>
                 </ul>
             </nav>
-            <span class="logo">ohmyfood</span>
+            <span class="footer__logo">ohmyfood</span>
         </footer>
     </div>
 

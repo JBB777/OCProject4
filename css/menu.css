@@ -5,11 +5,11 @@ h1 {
 /******************/
 /***   HEADER   ***/
 /******************/
-header {
+.header {
   flex-direction: row;
   justify-content: center;
 }
-header .button-header {
+.header__button {
   position: absolute;
   top: 24.5px;
   left: 10%;
@@ -21,7 +21,7 @@ header .button-header {
      object-fit: cover;
 }
 
-.menu-list {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,7 @@ header .button-header {
   border-radius: 50px 50px 0 0;
   padding: 10px 20px;
 }
-.menu-list .menu-title {
+.menu__title {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -39,17 +39,17 @@ header .button-header {
   align-items: center;
   margin-bottom: -25px;
 }
-.menu-list .menu-title h1 {
+.menu__title__principal {
   font-size: xx-large;
 }
-.menu-list .menu-title i {
+.menu__title__icon {
   font-size: 30px;
 }
-.menu-list .menu-content {
+.menu-content {
   width: 100%;
   margin-bottom: 10px;
 }
-.menu-list .menu-content .menu-content-title {
+.menu-content__title {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
@@ -57,48 +57,33 @@ header .button-header {
   border-bottom: solid var(--filter-bg-color);
   width: 50px;
 }
-.menu-list .menu-content .menu-card {
+.menu-content__card {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 20px;
-  /************/
-  /* Label V1 */
-  /************/
-  /************/
-  /* Label V2 */
-  /************/
 }
-.menu-list .menu-content .menu-card label {
-  display: flex;
-  gap: 5px;
-}
-.menu-list .menu-content .menu-card label .menu-card-text {
-  width: 100%;
+.menu-content__card__text {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding: 0 10px;
 }
-.menu-list .menu-content .menu-card label .menu-card-text .menu-card-text-title {
+.menu-content__card__text__title {
   font-weight: bold;
   margin: 0;
   padding-top: 10px;
 }
-.menu-list .menu-content .menu-card label .menu-card-text .menu-card-text-subtitle {
+.menu-content__card__text__subtitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: -10px;
 }
-.menu-list .menu-content .menu-card label .menu-card-text .menu-card-text-subtitle .price {
+
+.price {
   font-weight: bold;
 }
-.menu-list .menu-content .menu-card label input {
-  display: none;
-}
-.menu-list .menu-content .menu-card label input:checked + .volet {
-  transform: scale(1, 1);
-}
-.menu-list .menu-content .menu-card label .volet {
+
+.volet {
   align-content: center;
   background-color: var(--filter-bg-color);
   border-radius: 0 20px 20px 0;
@@ -107,18 +92,7 @@ header .button-header {
   transform: scale(0, 1);
   transition: transform 500ms;
 }
-.menu-list .menu-content .menu-card label .volet i {
+.volet i {
   font-size: 20px;
   color: white;
-}
-.menu-list .button-order {
-  color: white;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(var(--main-bg-color), var(--main-color));
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  padding: 15px 20px;
-}
-.menu-list .button-order:hover {
-  opacity: 0.9;
 }
