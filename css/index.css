@@ -1,3 +1,7 @@
+section {
+  padding: 20px 0 50px 0;
+}
+
 /******************/
 /***   HEADER   ***/
 /******************/
@@ -62,6 +66,13 @@
 /*******************************/
 /***   RESTAURANTS & CARDS   ***/
 /*******************************/
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -111,9 +122,13 @@
   }
   .restaurant__grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .restaurant__link {
+    margin-bottom: 0;
   }
   .restaurant__card {
-    width: 90%;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {

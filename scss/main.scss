@@ -50,10 +50,6 @@ a {
 
 }
 
-section {
-    padding: 20px 0 50px 0;     
-}
-
 .section__title {
     font-size: 24px;
     padding-left: 20px;
@@ -77,6 +73,21 @@ section {
 }
 
 
+
+/*********************************/
+/***   HEART ICON - FAVORITE   ***/
+/*********************************/
+
+.icon-favorite {
+
+    &:hover {
+        color: var(--main-color);
+        font: var(--fa-font-solid);
+        content: "\f004";
+    }
+}
+
+
 /**********************************/
 /***   PURPLE GRADIENT BUTTON   ***/
 /**********************************/
@@ -88,9 +99,11 @@ section {
     background: linear-gradient(var(--main-bg-color), var(--main-color));
     box-shadow: 0px 4px 10px 0px #00000040;
     padding: 15px 20px;
+    transition: all 400ms;
 
     &:hover {
-        opacity: 0.9;
+        opacity: 0.8;
+        box-shadow: 0px 4px 10px 5px #00000040;
     }
 }
 
