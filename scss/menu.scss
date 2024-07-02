@@ -46,7 +46,7 @@ main {
     background-color: var(--bg-color);
     margin-top: -50px;
     border-radius: 40px 40px 0 0;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 15px 30px 15px;
 
     &__title {
         width: 100%;
@@ -75,25 +75,32 @@ main {
         }
 
         &__card {
+            display: grid;
+            grid-template-columns: 90% 10% 0;
             background-color: white;
+            align-items: center;
+            justify-content: space-between ;
             border-radius: 20px;
             margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 500ms;
+
+            &:hover {
+                grid-template-columns: 70% 10% 20%;
+            }
 
             &__text {
-                display: flex;
-                flex-direction: column;
-                padding: 0 10px;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding: 0 0 0 10px;
 
                 &__title {
                     font-weight: bold;
-                    margin: 0;
-                    padding-top: 10px;
                 }
             
                 &__subtitle {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
                     margin-top: -10px; 
                 }
             }
@@ -101,22 +108,26 @@ main {
     }
 }
 
+.plat {
+    padding-bottom: 10px;
+}
+
 .price {
     font-weight: bold;
+    margin-bottom: -28px;
+    margin-left: -10px;
 }
 
 .volet {
-    align-content: center;
+    height: 100%;
     background-color: var(--filter-bg-color);
-    border-radius: 0 20px 20px 0;
-    padding: 0 10px;
-    transform-origin: right;
-    transform: scale(0,1);
-    transition: transform 500ms;
+    text-align: center;
+    align-content: center;
 
     i {
         font-size: 20px;
         color: white;
+        
     }
 }
 
@@ -138,7 +149,13 @@ main {
     }
 
     .menu-content {
-        width: 50%;
+        width: 60%;
+        
+        &__card {
+            &:hover {
+                grid-template-columns: 75% 10% 15%;
+            }
+        }
     }
     
 }
@@ -147,6 +164,4 @@ main {
     .header__button {
         left: 20%;
     }
-
-
 }
