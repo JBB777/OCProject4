@@ -13,7 +13,7 @@
   --main-bg-color: #FF79DA;
   --filter-bg-color: #99E2D0;
   --header-bg-color: #EAEAEA;
-  --bg-color:#F0F0F0;
+  --bg-color:#F6F6F6;
   --dark-blue:#003A68;
   --sky-blue:#89C8FA;
   --dark-green:#008766;
@@ -24,6 +24,10 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
+}
+
+p {
+  font-weight: 300;
 }
 
 a {

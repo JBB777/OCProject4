@@ -6,14 +6,27 @@ section {
 /******************/
 /***   HEADER   ***/
 /******************/
-.header__navbar {
+.header__form {
     width: 100%;
     background-color: var(--header-bg-color);
-    box-shadow: 0px 1px 5px 1px gray;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 10px;
+    padding: 10px 0;
+    gap: 10px;
+
+    &__label {
+        display: none;
+    }
+    
+    &__research {
+        background-color: var(--header-bg-color);
+        border: none;
+        width: 110px;
+        font-weight: bold;
+    }
 }
 
 
@@ -75,14 +88,6 @@ section {
 /***   RESTAURANTS & CARDS   ***/
 /*******************************/
 
-
-.card-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 10px;
-}
-
 .restaurant {
     display: flex;
     flex-direction: column;
@@ -103,21 +108,38 @@ section {
     &__card {
         width: 100%;
         background-color: white;
-        border-radius: 15px; 
-        
+        border-radius: 15px;
+        position: relative;
+
         &__content {
             display: flex;
-            flex-direction: column;
-            padding-bottom: 10px;
-
-            &__title {
-                margin: 10px 10px;
-            }
-
-            &__subtitle {
-                margin: 0 10px;
-            }
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 10px;
         }
+        
+        &__text {
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+        }
+
+        &__subtitle {
+            margin-top: -20px;
+        }
+       
+    }
+
+    .new {
+        background-color: var(--filter-bg-color);
+        color: var(--dark-green);
+        width: min-content;
+        padding: 5px 10px;
+        position: absolute;
+        top: 20px;
+        right: 5%;
+        box-shadow: 0px 2px 4px 0px #00000026;
+
     }
 
     &__img {
@@ -135,7 +157,7 @@ section {
 
 @media (min-width:768px) {
 
-    .header__navbar {
+    .header__form {
         box-shadow: none;
     }
 

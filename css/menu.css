@@ -27,6 +27,11 @@ main {
   left: 10%;
 }
 
+.container-photo {
+  height: 240px;
+  overflow: hidden;
+}
+
 .photo-bg {
   width: 100%;
   -o-object-fit: cover;
@@ -79,7 +84,7 @@ main {
   transition: all 500ms;
 }
 .menu-content__card:hover {
-  grid-template-columns: 70% 10% 20%;
+  grid-template-columns: 75% 10% 15%;
 }
 .menu-content__card__text {
   display: inline-block;
@@ -123,6 +128,9 @@ main {
   main {
     align-items: center;
   }
+  .container-photo {
+    height: 450px;
+  }
   .menu {
     width: 80%;
     padding: 0 0 30px 0;
@@ -132,10 +140,5 @@ main {
   }
   .menu-content__card:hover {
     grid-template-columns: 75% 10% 15%;
-  }
-}
-@media (min-width: 1024px) {
-  .header__button {
-    left: 20%;
   }
 }
