@@ -8,6 +8,10 @@ main {
     flex-direction: column;
 }
 
+
+/*********************************/
+/***   HEART ICON - FAVORITE   ***/
+/*********************************/
 .icon-favorite {
     font-size: 30px;
 
@@ -31,6 +35,10 @@ main {
     }
 }
 
+
+/********************/
+/***   BG PHOTO   ***/
+/********************/
 .container-photo {
     height: 240px;
     overflow: hidden;
@@ -41,6 +49,9 @@ main {
     object-fit: cover;
 }
 
+/****************/
+/***   MENU   ***/
+/****************/
 
 .menu {
     display: flex;
@@ -94,18 +105,20 @@ main {
             }
 
             &__text {
-                display: inline-block;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                padding: 0 0 0 10px;
+                padding: 0 0 0 15px;
 
                 &__title {
-                    font-weight: bold;
+                    margin-top: 15px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             
                 &__subtitle {
-                    margin-top: -10px;
+                    margin-top: -15px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -118,8 +131,7 @@ main {
 
 .price {
     font-weight: bold;
-    margin-bottom: -28px;
-    margin-left: -10px;
+    margin-bottom: -10px;
 }
 
 .volet {
