@@ -4,6 +4,39 @@ section {
 }
 
 /******************/
+/***   LOADER   ***/
+/******************/
+.loader {
+    position: fixed;
+    z-index: 10;
+    pointer-events: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: var(--footer-bg-color);
+    animation: anim-loader 3s forwards;
+
+    &-icon {
+        position:fixed;
+        color:white;
+        font-size: 100px;
+        top: 45%;
+        left: 45%;
+    }
+  }
+
+  @keyframes anim-loader{ 
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+
+/******************/
 /***   HEADER   ***/
 /******************/
 .header__form {
