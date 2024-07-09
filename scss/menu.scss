@@ -47,6 +47,15 @@ main {
 .photo-bg {
     width: 100%;
     object-fit: cover;
+    object-position: center -20px;
+}
+
+.photo-note-enchantee {
+    object-position: center -160px;
+}
+
+.photo-delice-des-sens {
+    object-position: center -150px;
 }
 
 /****************/
@@ -101,7 +110,7 @@ main {
             }
 
             &__text {
-                padding: 0 0 0 15px;
+                padding: 0 5px 0 15px;
 
                 &__title {
                     margin-top: 15px;
@@ -113,7 +122,7 @@ main {
             
                 &__subtitle {
                     font-size: 15px;
-                    margin-top: -15px;
+                    margin-top: -10px;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
@@ -183,6 +192,18 @@ main {
     .container-photo {
         height: 450px;
     }
+    .photo-palette-du-gout {
+        object-position: center -60px;
+    }
+    .photo-note-enchantee {
+        object-position: center -320px;
+    }
+    .photo-a-la-francaise {
+        object-position: center -70px;
+    }
+    .photo-delice-des-sens {
+        object-position: center -75px;
+    }
 
     .menu {
         width: 80%;
@@ -199,9 +220,24 @@ main {
         
         &__card {
             &:hover {
-                grid-template-columns: 75% 10% 15%;
+                grid-template-columns: 80% 10% 10%;
             }
         }
     }
     
+}
+
+@media (min-width:1024px) {
+    .photo-palette-du-gout {
+        object-position: center -160px;
+    }
+    .photo-note-enchantee {
+        object-position: center -520px;
+    }
+    .photo-a-la-francaise {
+        object-position: center -220px;
+    }
+    .photo-delice-des-sens {
+        object-position: center -230px;
+    }
 }

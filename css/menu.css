@@ -42,6 +42,18 @@ main {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center -20px;
+     object-position: center -20px;
+}
+
+.photo-note-enchantee {
+  -o-object-position: center -160px;
+     object-position: center -160px;
+}
+
+.photo-delice-des-sens {
+  -o-object-position: center -150px;
+     object-position: center -150px;
 }
 
 /****************/
@@ -93,7 +105,7 @@ main {
   grid-template-columns: 75% 10% 15%;
 }
 .menu-content__card__text {
-  padding: 0 0 0 15px;
+  padding: 0 5px 0 15px;
 }
 .menu-content__card__text__title {
   margin-top: 15px;
@@ -104,7 +116,7 @@ main {
 }
 .menu-content__card__text__subtitle {
   font-size: 15px;
-  margin-top: -15px;
+  margin-top: -10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -161,6 +173,22 @@ main {
   .container-photo {
     height: 450px;
   }
+  .photo-palette-du-gout {
+    -o-object-position: center -60px;
+       object-position: center -60px;
+  }
+  .photo-note-enchantee {
+    -o-object-position: center -320px;
+       object-position: center -320px;
+  }
+  .photo-a-la-francaise {
+    -o-object-position: center -70px;
+       object-position: center -70px;
+  }
+  .photo-delice-des-sens {
+    -o-object-position: center -75px;
+       object-position: center -75px;
+  }
   .menu {
     width: 80%;
     padding: 0 0 30px 0;
@@ -173,6 +201,24 @@ main {
     width: 60%;
   }
   .menu-content__card:hover {
-    grid-template-columns: 75% 10% 15%;
+    grid-template-columns: 80% 10% 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .photo-palette-du-gout {
+    -o-object-position: center -160px;
+       object-position: center -160px;
+  }
+  .photo-note-enchantee {
+    -o-object-position: center -520px;
+       object-position: center -520px;
+  }
+  .photo-a-la-francaise {
+    -o-object-position: center -220px;
+       object-position: center -220px;
+  }
+  .photo-delice-des-sens {
+    -o-object-position: center -230px;
+       object-position: center -230px;
   }
 }

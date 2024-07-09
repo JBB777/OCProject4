@@ -14,7 +14,8 @@ section {
   right: 0;
   bottom: 0;
   background: var(--footer-bg-color);
-  animation: anim-loader 3s forwards;
+  animation: anim-loader 1s forwards;
+  animation-delay: 500ms;
 }
 .loader-icon {
   position: fixed;
@@ -101,6 +102,12 @@ section {
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
+.fonctionnement-step__text i {
+  color: grey;
+}
+.fonctionnement-step__text:hover i {
+  color: var(--main-color);
+}
 
 /*******************************/
 /***   RESTAURANTS & CARDS   ***/
@@ -113,7 +120,7 @@ section {
 .restaurant__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .restaurant__link {
   display: flex;
@@ -138,7 +145,7 @@ section {
   padding-left: 15px;
 }
 .restaurant__card__subtitle {
-  margin-top: -20px;
+  margin-top: -15px;
 }
 .restaurant .new {
   background-color: var(--filter-bg-color);
@@ -150,6 +157,7 @@ section {
   top: 20px;
   right: 5%;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 3px;
 }
 .restaurant__img {
   width: 100%;
@@ -169,7 +177,7 @@ section {
   }
   .restaurant__grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 50px 80px;
   }
   .restaurant__link {
     margin-bottom: 0;
@@ -179,6 +187,9 @@ section {
   }
 }
 @media (min-width: 1024px) {
+  section {
+    padding: 20px 45px 50px 45px;
+  }
   .fonctionnement-step {
     flex-direction: row;
     gap: 50px;
