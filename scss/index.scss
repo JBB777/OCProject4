@@ -23,7 +23,7 @@ section {
         color:white;
         font-size: 100px;
         top: 45%;
-        left: 45%;
+        left: 37%;
     }
   }
 
@@ -71,6 +71,10 @@ section {
 .introduction {
     background-color: var(--bg-color);
     text-align: center;
+
+    h1 {
+        padding: 0 50px;
+    }
 
     p {
         margin-bottom: 50px;
@@ -201,6 +205,10 @@ section {
 
 @media (min-width:768px) {
 
+    .loader-icon {
+        top: 45%;
+        left: 45%;
+    }
     .header__form {
         box-shadow: none;
     }
